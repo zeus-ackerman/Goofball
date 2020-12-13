@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6e44db2fb2.js" crossorigin="anonymous"></script>
+        <style>
+            body {padding: 0; margin: 0; font-family: 'Rubik', sans-serif;}
+            
+            nav {
+                margin: 0px auto;
+                height: 100px;
+                position:sticky;
+                
+            }
+
+            nav ul {
+                background-color: #2A2A2A;
+                height: 100%;
+                position: relative;
+                justify-items: center;
+            }
+
+            nav li {
+                list-style-type: none;
+                padding: 14px 18px;
+                position: relative;
+                top: 25px;
+                float: right;
+            }
+
+            nav a {
+                text-decoration: none;
+                font-size: 20px;
+                font-family: 'Rubik', sans-serif;
+                color: #ffffff;
+            }
+
+            nav a:hover {
+                color: #00ccff;
+                transition: 1.2s;
+                font-weight: 400;
+            }
+
+            img {
+                width: 50%; height: 100%;
+                position: absolute;
+                right: 720px;
+            }
+            
+            .me {
+                width: 100%;
+                height: 557px;
+                opacity: 0.9;
+                filter: contrast(120%);
+                background:url(https://ak.picdn.net/shutterstock/videos/20899486/thumb/1.jpg);
+                background-size: cover;
+                background-repeat:round;
+                background-origin: content-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #skuare {
+                width: 80%;
+                height: 80%;
+                background-color: transparent;
+            }
+
+            #skuare img {
+                width: 8%; height: 20%;
+                border-radius: 100%;
+                position: absolute;
+                right:40px;
+            }
+
+            #skuare img:hover {
+                transition: 1s;
+            }
+
+            nav input[type="search"] {
+                width: 0;
+                opacity: 0;
+                transition: 1s;
+                height:auto;
+                border: none;
+                padding: 0 0 0 10px;
+                border-radius: 4px 0 0 4px;
+            }
+
+            nav input[type="button"] {
+                width: 50px;
+                height: auto;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                color: #0a0a0a;
+                font-size: 16px;
+                background-color: #fafafa;
+                font-weight: bold;
+            }
+
+            nav input[type="button"]:hover {
+                background-color: #acacac;
+            }
+
+            .clast {
+                width: 190px;
+                height: 25px;
+                display: flex;
+            }
+
+            #luv {
+                color:#fafafa; letter-spacing: 1px;
+                font-weight: normal; text-align: center;
+                font-size: 3pc;
+                position: relative;
+                top: 140px;
+                animation: poop 2.8s ease-in;
+                font-family: 'Questrial', sans-serif;
+            }
+
+            #lue {
+                color:#fafafa; letter-spacing: 1px;
+                font-weight: normal; text-align: center;
+                font-size: 3pc;
+                position: relative;
+                top: 140px;
+                font-family: 'Rubik', sans-serif;
+                animation: crown 2.8s ease-in;
+                width: 35%;
+                height: 40px;
+                display: flex;
+            }
+
+            button {
+                width: 50%;
+                font-family: 'Fira Sans Condensed', sans-serif;
+                border: none;
+                cursor: pointer;
+                font-size: 17px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+            button:hover {
+                transition: 0.8s all;
+            }
+
+            button:nth-child(1) {
+                background-color: black;
+                color: white;
+            }
+
+            button:nth-child(1):hover {
+                border: 2px solid #fcfcfc;
+                background-color: transparent;
+            }
+
+            button:nth-child(2):hover {
+                border: 2px solid #0a0a00;
+                background-color: transparent;
+                color: #fafafa;
+            }
+
+            @keyframes poop {
+                0% {
+                    transform: translateY(-150%);
+                    opacity: 0;
+                } 50% {
+                    transform: translateY(-150%);
+                    opacity: 0;
+                } 100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes crown {
+                0% {
+                    transform: translateY(150%);
+                    opacity: 0;
+                } 50% {
+                    transform: translateY(150%);
+                    opacity: 0;
+                } 100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+            #blyat {
+                color: white;
+                width: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <div class="clast">
+                        <input type="search" id="zyka" placeholder="Search Here...">
+                        <div id="blyat" onclick="sakatonik()">
+                            <i class="fas fa-search" title="Search"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- for journey.jpg create your own banner in adobe illustrator or similiar to it -->
+                <a href="www.google.com"><img src="D:/System/journey.jpg" title="The Journey"></a>
+                <li><a href="#" target="_blank">Fire</a></li>
+                <li><a href="#" target="_blank">Water</a></li>
+                <li><a href="#" target="_blank">Earth</a></li>
+                <li><a href="#" target="_blank">Wind</a></li>
+            </ul>
+        </nav>
+        <div class="me">
+            <div id="skuare">
+                <img src="D:/System/FullMoon2010.jpg" id="beras" onmousemove="opsie()" onmouseout="fadetCuy()">
+                <center>
+                    <div id="luv"> Raihan Octa Ramadhan </div>
+                    <br><br>
+                    <div id="lue">
+                        <button> sign up </button>
+                        &nbsp;&nbsp;
+                        <button> log in </button>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <script>
+            var dru = document.getElementById("blyat");
+            var gru = document.getElementById("zyka");
+
+            function sakatonik() {
+
+                zyka.style.opacity = '1';
+                blyat.style.fontSize = '11px';
+                blyat.style.borderTopLeftRadius = '0px';
+                blyat.style.borderBottomLeftRadius = '0px';
+                blyat.style.textTransform = 'uppercase';
+                blyat.style.backgroundColor = '#0a0a0a';
+                blyat.style.color = '#fafafa';
+                zyka.style.width = '140px';
+            }
+        </script>
+        <script>
+            var lur = document.getElementById("beras");
+
+            function opsie() {
+                lur.style.transform = 'scale(1.2)';
+            }
+
+            function fadetCuy() {
+                lur.style.transform = 'scale(1)';
+                lur.style.transition = '1s';
+            }
+        </script>
+    </body>
+</html>
